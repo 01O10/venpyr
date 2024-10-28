@@ -1,4 +1,4 @@
-# venpyr <img src='docs/site/figures/venpyr.svg' align="right" width="100" height="100"/>
+# venpyr <img src='docs/site/figures/venpyr.svg' align="right" width="200" height="200"/>
 
 <!-- badges: start -->
 ![Lifecycle:
