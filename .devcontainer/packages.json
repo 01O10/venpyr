@@ -1,0 +1,40 @@
+{
+    "packages": [
+        {
+            "package": "BH",
+            "version":"1.84.0-0"
+        },
+        {
+            "package": "languageserver",
+            "version":"0.3.16"
+        },
+        {
+            "package": "httpgd",
+            "version":"2.0.2"
+        },
+        {
+            "package": "rmarkdown",
+            "version":"2.28"
+        },
+        {
+            "package": "dplyr",
+            "version":"1.1.4"
+        },
+        {
+            "package": "ggplot2",
+            "version":"3.5.1"
+        },
+        {
+            "package": "shiny",
+            "version":"1.9.1"
+        },
+        {
+            "package": "pins",
+            "version":"1.4.0"
+        },
+        {
+            "package": "tidyverse",
+            "version":"2.0.0"
+        }
+    ]
+}
