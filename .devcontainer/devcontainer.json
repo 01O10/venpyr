@@ -1,5 +1,5 @@
 {
-    "name": "venpyr-dev",
+    "name": "venpyr",
     "image": "timabg/venpyr", 
      "customizations": {
          "vscode": {
@@ -25,6 +25,6 @@
                  "github.vscode-github-actions"
              ]
          } 
-     }, 
-     "postStartCommand": "bash"
+     }
+    //  "postStartCommand": "bash"
  } 
