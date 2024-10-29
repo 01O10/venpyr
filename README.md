@@ -18,12 +18,12 @@ docker pull timabg/venpyr
 
 `venpyr` does contain the following tools for your Data Science project:
 
-- __OS image__: Ubuntu (v22.04).
-- __Programming language__: Python (v3.10), R (v4.3.1).
-- __Documentation__: Quarto (v1.5.57).
-- __Package manager__: Poetry (v1.8.0).
-- __Versioning__: Git.
-- __VScode facilities__: basic extensions and settings (devcontainer.json, settings.json).
+- 💻 __OS image__: Ubuntu (v22.04).
+- 🐍 __Programming language__: Python (v3.10), R (v4.3.1).
+- 📖 __Documentation__: Quarto (v1.5.57).
+- 🧩 __Package manager__: Poetry (v1.8.0).
+- ⏲ __Versioning__: Git.
+- ✨ __VScode facilities__: basic extensions and settings (devcontainer.json, settings.json).
 
 ## About
 
