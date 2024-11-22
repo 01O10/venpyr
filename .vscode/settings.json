@@ -1,0 +1,7 @@
+{
+    "r.rterm": "/usr/local/bin/radian",
+    "r.bracketedPaste": true,
+    "r.sessionWatcher": true,
+    "r.plot.useHttpgd": true,
+    "r.lsp.diagnostics": false
+}

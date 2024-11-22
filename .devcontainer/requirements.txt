@@ -1,0 +1,6 @@
+ipykernel
+radian
+quartodoc
+pytest
+ruff
+dvc
