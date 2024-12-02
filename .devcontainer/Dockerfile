@@ -28,9 +28,8 @@ RUN poetry new packages-dependencies && \
 # Export Poetry dependencies to requirements.txt
 RUN cd packages-dependencies && poetry export -f requirements.txt --without-hashes -o /tmp/requirements.txt
 
-# Stage 2: Copy the generated pyproject.toml and poetry.lock files
+# Stage 2: R and Python Dependencies
 FROM rocker/tidyverse:4.3.1 AS r-env
-
 
 # Install R dependencies
 RUN install2.r BH languageserver httpgd
@@ -54,7 +53,18 @@ RUN poetry install --no-root
 # Remove the temporary Poetry project
 RUN rm -rf /packages-dependencies
 
-# Optionally, set working directory in the final image
+# Install additional dependencies
+RUN apt-get update && apt-get install -y openssh-client
+
+# ---- Add Git Identity Script ---- #
+# Copy the script into the container
+COPY scripts/set-git-config.sh /root/scripts/set-git-config.sh
+
+# Make the script executable
+RUN chmod +x /root/scripts/set-git-config.sh
+
+# ---- Optional Working Directory ---- #
 WORKDIR /app
-# Default command (can be replaced with your application command)
+
+# ---- Default Command ---- #
 CMD ["bash"]

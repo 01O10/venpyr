@@ -1,30 +1,30 @@
 {
-    "name": "venpyr",
-    "image": "timabg/venpyr", 
-     "customizations": {
-         "vscode": {
-             "extensions": [
-                 // R Extensions
-                 "rdebugger.r-debugger",
-                 "reditorsupport.r",
-                 // Documentation Extensions
-                 "quarto.quarto",
-                 "purocean.drawio-preview",
-                 "redhat.vscode-yaml",
-                 "yzhang.markdown-all-in-one",
-                 // Docker Supporting Extensions
-                 "ms-azuretools.vscode-docker",
-                 "ms-vscode-remote.vscode-remote-extensionpack",
-                 // Python Extensions
-                 "ms-python.python",
-                 "ms-toolsai.jupyter",
-                 "charliermarsh.ruff",
-                 // Github Extensions
-                 "github.vscode-pull-request-github",
-                 "github.codespaces",
-                 "github.vscode-github-actions"
-             ]
-         }
-     }
-    //  "postStartCommand": "bash"
- } 
+  "name": "venpyr",
+  "image": "timabg/venpyr",
+  "mounts": [
+    "source=/home/tim/.env,target=/root/.env,type=bind",
+    "source=/home/tim/dev/venpyr,target=/workspaces,type=bind",
+    "source=/home/tim/.ssh,target=/root/.ssh,type=bind"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rdebugger.r-debugger",
+        "reditorsupport.r",
+        "quarto.quarto",
+        "purocean.drawio-preview",
+        "redhat.vscode-yaml",
+        "yzhang.markdown-all-in-one",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff",
+        "github.vscode-pull-request-github",
+        "github.codespaces",
+        "github.vscode-github-actions"
+      ]
+    }
+  },
+  "postCreateCommand": "/bin/bash /root/scripts/set-git-config.sh"
+}
